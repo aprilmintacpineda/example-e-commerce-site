@@ -393,6 +393,7 @@
 								return r.json();
 							})
 							.then(function(data) {
+								cash.deduct(cart.amountPayable());
 								purchases.updatePurchases(data);
 								cart.clean();
 								cart.hide();
