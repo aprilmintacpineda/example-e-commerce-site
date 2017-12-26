@@ -1,0 +1,112 @@
+.cart-wrapper {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 250px;
+	z-index: 100;
+	font-family: 'Roboto', sans-serif;
+}
+.toggle-cart {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	height: auto;
+	display: block;
+	cursor: pointer;
+}
+.cart {
+	position: absolute;
+	width: 350px;
+	height: calc(100vh - 130px);
+	padding-bottom: 91px;
+	opacity: 1;
+	right: 0;
+	bottom: 60px;
+	overflow: hidden;
+	transition: all 300ms;
+}
+.cart.hidden {
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+}
+.cart:after {
+	content: '';
+	display: block;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #d0d1d5;
+	top: calc(100% - 26px);
+	right: 28px;
+}
+.cart .cart-information {
+	position: absolute;
+	padding: 7px;
+	background: #ffffff;
+	bottom: 26px;
+	left: 0px;
+	border-radius: 0 0 4px 4px;
+	width: 100%;
+	border: 1px solid #d0d1d5;
+	border-top: 0;
+}
+.cart .cart-information a {
+	color: #006699;
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	cursor: pointer;
+}
+.cart .cart-information .checkout {
+	position: absolute;
+	right: 7px;
+	display: inline-block;
+	padding: 7px;
+	border: 1px solid #006699;
+	border-radius: 4px;
+	color: #006699;
+	cursor: pointer;
+	transition: all 300ms;
+}
+.cart .cart-information .checkout:hover {
+	padding-right: 17px;
+}
+.cart .cart-information .checkout span {
+	display: inline-block;
+	position: absolute;
+	right: 7px;
+	transition: all 300ms;
+	opacity: 0;
+	font-weight: bold;
+}
+.cart .cart-information .checkout:hover span {
+	opacity: 1;
+}
+.cart .item-list {
+	border: 1px solid #d0d1d5;
+	padding: 10px;
+	border-radius: 4px;
+	transition: all 300ms;
+	background: #ffffff;
+	height: calc(100% - 25px);
+	overflow-y: auto;
+}
+.cart .item-list .item img {
+	width: 100px;
+	height: auto;
+	float: left;
+}
+.cart .item-list .item .item-details {
+	float: left;
+	padding: 10px;
+}
+.cart .item-list .item a {
+	color: #006699;
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	cursor: pointer;
+}
+.cart .item-list .item a:hover {
+	text-decoration: none;
+}

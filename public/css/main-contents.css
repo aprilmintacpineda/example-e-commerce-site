@@ -1,0 +1,103 @@
+.main-contents {
+	position: absolute;
+	width: 75%;
+	left: 25%;
+	font-family: 'Roboto', sans-serif;
+}
+.main-contents .item-list {
+	padding: 10px;
+	margin: 100px 0;
+}
+.main-contents .items {
+	width: 25%;
+	height: 400px;
+	float: left;
+	padding: 10px;
+}
+.main-contents .items:hover {
+	border-radius: 4px;
+	background: #fbfbfb;
+}
+.main-contents .items img {
+	width: 100%;
+	height: auto;
+}
+.main-contents .items .buttons {
+	position: relative;
+}
+.main-contents .items .add-to-cart {
+	position: relative;
+	margin-top: 10px;
+	display: inline-block;
+	border: 1px solid #006699;
+	color: #006699;
+	border-radius: 4px;
+	padding: 7px;
+	padding-right: 50px;
+	cursor: pointer;
+	background: transparent;
+	transition: all 300ms;
+}
+.main-contents .items .remove-from-cart {
+	position: relative;
+	margin-top: 10px;
+	display: inline-block;
+	border: 1px solid #006699;
+	color: #006699;
+	border-radius: 4px;
+	padding: 7px;
+	cursor: pointer;
+	background: transparent;
+	transition: all 300ms;
+}
+.main-contents .items .remove-from-cart:hover {
+	border: 1px solid #fc1500;
+	color: #fc1500;
+	padding-left: 20px;
+}
+.main-contents .items .remove-from-cart:hover .cross {
+	opacity: 1;
+}
+.main-contents .items .remove-from-cart .cross {
+	left: 7px;
+	font-weight: bold;
+	opacity: 0;
+	transition: opacity 300ms;
+}
+.main-contents .items .add-to-cart .bg {
+	position: absolute;
+	background: #006699;
+	top: 0;
+	left: 0;
+	padding: 7px;
+	width: 0;
+	opacity: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: hidden;
+	text-align: center;
+	transition: all 300ms;
+	color: #ffffff;
+}
+.main-contents .items .add-to-cart:hover .bg{
+	width: 100%;
+	opacity: 1;
+}
+.main-contents .items .add-to-cart small{
+	position: absolute;
+	right: 7px;
+	font-weight: bold;
+}
+.main-contents .items .in-cart {
+	position: relative;
+	margin-top: 10px;
+	display: inline-block;
+	padding: 7px;
+}
+.main-contents footer {
+	position: block;
+	padding: 20px 0;
+	text-align: center;
+	background: #302f2d;
+	color: #ffffff;
+}
